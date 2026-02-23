@@ -11,7 +11,7 @@ class Pipeguard < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/tazi06/pipeguard/releases/download/v0.1.0/pipeguard_0.1.0_darwin_amd64.tar.gz"
-      sha256 "62a6a20f8fa09f76befc8a97297ac0d17fd0aa0d1de23192c7411164a028cf5d"
+      sha256 "47b5090681312a519f514c3de8013f38fe30e6ca67be60d0936ec86dfc5c48ff"
 
       define_method(:install) do
         bin.install "pipeguard"
@@ -19,7 +19,7 @@ class Pipeguard < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/tazi06/pipeguard/releases/download/v0.1.0/pipeguard_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d67808b86a0288758ae7b631a846863b631137d4067ae5114481e62b66c22fab"
+      sha256 "f4588d92c011148479d0014166c4b92d345ff00f39e2ff175ed70718fcb126ec"
 
       define_method(:install) do
         bin.install "pipeguard"
@@ -30,14 +30,14 @@ class Pipeguard < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/tazi06/pipeguard/releases/download/v0.1.0/pipeguard_0.1.0_linux_amd64.tar.gz"
-      sha256 "570c0393aa5cf2348b61d121a7b2a95ac1c08a13f76b741c04e07de5161ea73c"
+      sha256 "f0c504bb214a4e7dc7e9caf27f01aa451c70f12a577009b52840b58347a4ec61"
       define_method(:install) do
         bin.install "pipeguard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/tazi06/pipeguard/releases/download/v0.1.0/pipeguard_0.1.0_linux_arm64.tar.gz"
-      sha256 "4c7cc42b08012bbe20b8cdc4100742389b1d392703ba6aafb5b3d0714a829d3d"
+      sha256 "23422346f70aa28cd63ff1cf58d9cc4cab546cb0589216f4806aa75d201a5188"
       define_method(:install) do
         bin.install "pipeguard"
       end
